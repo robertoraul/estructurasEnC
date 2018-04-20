@@ -43,5 +43,17 @@ void mostrarAlumno(Alumno aluAux )
 }
 int buscarLugarLibre(Alumno listado[],int tamanio)
 {
-
+    int indice=-1;
+    int i;
+    for(i=0;i<tamanio;i++)
+    {
+        if(listado[i].estado==0)
+        {
+            indice=i;
+            break;
+        }
+    }
+    return indice;
 }
+
+
