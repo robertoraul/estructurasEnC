@@ -15,7 +15,7 @@ typedef struct{
 int main()
 {
 
+EAlumno alumno[5];
 
-    printf("Hello world!\n");
     return 0;
 }
