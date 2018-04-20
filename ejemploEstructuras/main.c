@@ -11,22 +11,47 @@ int estado;
 Alumno pedirAlumno(void);
 void mostrarAlumno(Alumno );
 int buscarLugarLibre(Alumno[],int);
+int buscarIndiceDelAlumno(Alumno listado[],int legajo,int cantidad);
+int insertarAlumnoEnLaLista(Alumno[]);
+void mostrarListado(Alumno listado[],int cantidad);
+float calcularPromedio(int ,int);
+void ordenarPorPromedio(Alumno[],int cantidad);
+
 int main()
 {
+    Alumno aluDelMain;
+    aluDelMain= pedirAlumno();
+    mostrarAlumno(aluDelMain);
+
     int i;
     Alumno listadoDelMain[TAMANIO];
     for(i=0;i<TAMANIO;i++)
     {
         listadoDelMain[i].estado=0;
     }
-    Alumno aluDelMain;
 
-    aluDelMain= pedirAlumno();
-
-    mostrarAlumno(aluDelMain);
-
+    ordenarPorPromedio(listadoDelMain,TAMANIO);
+    mostrarListado(listadoDelMain,TAMANIO);
 
     return 0;
+}
+
+void ordenarPorPromedio(Alumno listado[],int cantidad)
+{
+     int i;
+    for(i=0;i<cantidad;i++)
+    {
+        listado[i].legajo=i*9;
+    }
+
+}
+void mostrarListado(Alumno listado[],int cantidad)
+{
+     int i;
+    for(i=0;i<cantidad;i++)
+    {
+       mostrarAlumno( listado[i]);
+    }
 }
 Alumno pedirAlumno(void)
 {
@@ -38,8 +63,8 @@ Alumno pedirAlumno(void)
 }
 void mostrarAlumno(Alumno aluAux )
 {
-
-    printf("el legajo es : %d",aluAux.legajo );
+    printf("\nel legajo es : %d",aluAux.legajo );
+    printf("el estado es : %d",aluAux.estado );
 }
 int buscarLugarLibre(Alumno listado[],int tamanio)
 {
