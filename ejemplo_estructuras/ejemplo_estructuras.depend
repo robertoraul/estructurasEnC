@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1524263874 source:c:\test\rrc\estructurasenc\ejemplo_estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1524264110 c:\test\rrc\estructurasenc\ejemplo_estructuras\funciones.h
+

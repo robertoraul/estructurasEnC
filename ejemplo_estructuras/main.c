@@ -1,21 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "funciones.h"
+#define TAMANIO 5
 
-typedef struct{
-    int legajo;
-    int notaUno;
-    int notados;
-    int estados;
-    float promedio;
-    char[50] nombre;
-    int estado;
-}EAlumno;
 
 
 int main()
 {
+EAlumno alumno;
+alumno = cargarAlumno();
+mostrarAlumno(alumno);
 
-EAlumno alumno[5];
 
     return 0;
 }
+
