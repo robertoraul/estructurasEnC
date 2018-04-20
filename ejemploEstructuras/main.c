@@ -16,13 +16,19 @@ int insertarAlumnoEnLaLista(Alumno[]);
 void mostrarListado(Alumno listado[],int cantidad);
 float calcularPromedio(int ,int);
 void ordenarPorPromedio(Alumno[],int cantidad);
-
+/**
+para el martes 24 de abril
+1-completar las funciones faltantes con sus implementaciones
+2- hacer un menu de opciones (en el main o en funciones)
+3- Terminar el alta baja y modificacion de un alumno del listado
+*/
 int main()
 {
+    /*
     Alumno aluDelMain;
     aluDelMain= pedirAlumno();
     mostrarAlumno(aluDelMain);
-
+    */
     int i;
     Alumno listadoDelMain[TAMANIO];
     for(i=0;i<TAMANIO;i++)
