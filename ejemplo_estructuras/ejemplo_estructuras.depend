@@ -6,3 +6,14 @@
 
 1524264110 c:\test\rrc\estructurasenc\ejemplo_estructuras\funciones.h
 
+1524492098 source:c:\users\rcard\git\estructurasenc\ejemplo_estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1524589328 c:\users\rcard\git\estructurasenc\ejemplo_estructuras\funciones.h
+
+1524582366 source:c:\users\rcard\git\estructurasenc\ejemplo_estructuras\funciones.c
+	<stdio.h>
+	"funciones.h"
+

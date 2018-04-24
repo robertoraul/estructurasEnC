@@ -12,16 +12,11 @@ typedef struct{
 
 EAlumno cargarAlumno(void);
 void mostrarAlumno(EAlumno);
-modificarAlumno();
-borrarAlumno();
-void ordenarPorPromedio(EAlumno listado[], int cantidad);
-
-int buscarLugarLibre(EAlumno listado[], int tamanio);
-int buscarAlumno(EAlumno listado[5], EAlumno);
-int buscarIndiceDeAlumno(EAlumno listado[],int legajo, int cantidad);
+int buscarLugarLibre(EAlumno[],int);
+int buscarIndiceDelAlumno(EAlumno listado[],int legajo,int cantidad);
 int insertarAlumnoEnLaLista(EAlumno[]);
-void mostrarListado(EAlumno listado[], int cantidad);
-EAlumno pedirAlumno();
-int insertarEnListaAlumno(EAlumno ealumno[]);
+void mostrarListado(EAlumno listado[],int cantidad);
+float calcularPromedio(int ,int);
+void ordenarPorPromedio(EAlumno[],int cantidad);
 
 #endif // FUNCIONES_H_INCLUDED
